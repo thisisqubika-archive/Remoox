@@ -1,0 +1,26 @@
+{
+  "name": "generator-remoox",
+  "version": "0.0.0",
+  "description": "redux + react + webpack generator",
+  "homepage": "github.com/moove-it/remoox",
+  "author": {
+    "name": "Lucas Aragno",
+    "email": "lucas.aragno@moove-it.com",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "redux react webpack babel6"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.22.5",
+    "yosay": "^1.1.0"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.1"
+  }
+}
