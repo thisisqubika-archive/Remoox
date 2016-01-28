@@ -13,7 +13,11 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "redux react webpack babel6"
+    "redux",
+    "react",
+    "webpack",
+    "generator",
+    "yeoman-generator"
   ],
   "license": "MIT",
   "dependencies": {
