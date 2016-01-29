@@ -11,7 +11,7 @@ It's ["Atomic Flux with hot reloading"](http://youtube.com/watch?v=xsSnOQynTHs),
 > * Works great in universal (aka "isomorphic") apps because it doesn't use singletons and the data can be rehydrated.
 ...
 
-### What is [REACT](https://github.com/facebook/react)
+### What is [React](https://github.com/facebook/react)
 
 React is a JavaScript library for building user interfaces.
 
@@ -24,13 +24,13 @@ React is a JavaScript library for building user interfaces.
 - [x] Redux-based application architecture
 - [x] React for rad components
 - [x] [WebPack](http://webpack.github.io/) for build pipeline and dev server awesomeness
-- [x] [Babel](https://babeljs.io/) transpiler so you can use [bleeding edge language features](https://babeljs.io/docs/usage/experimental/)
+- [x] [Babel](https://babeljs.io/) transpiler so you can use ES6 features
 - [x] PostCSS preprocessor with autoprefixer support
 - react-router and redux-router ( comming soon redux-simple-router )
 
 ### Prerequisites
 
-You must have [Node.js w/NPM](http://nodejs.org/) installed. I recommend installing via [homebrew](http://brew.sh/), but you should be able to use the [pre-built installers](http://nodejs.org/download/) if you prefer.
+You must have [Node.js w/NPM](http://nodejs.org/) installed. I recommend installing via [homebrew](http://brew.sh/).
 
 Also, `generator-remoox` is a [Yeoman](http://yeoman.io/) generator. If you do not have Yeoman installed, first run:
 

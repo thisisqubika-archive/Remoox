@@ -7,9 +7,8 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async()
 
-    // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the sensational ' + chalk.red('generator-remoox') + ' generator!'
+      'Welcome to the super special awesome ' + chalk.red('generator-remoox') + ' generator!'
     ))
 
     var prompts = [{
@@ -31,8 +30,6 @@ module.exports = yeoman.generators.Base.extend({
 
     this.prompt(prompts, function (props) {
       this.props = props
-      // To access props later use this.props.someOption
-
       done()
     }.bind(this))
   },
