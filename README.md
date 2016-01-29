@@ -11,7 +11,7 @@ It's ["Atomic Flux with hot reloading"](http://youtube.com/watch?v=xsSnOQynTHs),
 > * Works great in universal (aka "isomorphic") apps because it doesn't use singletons and the data can be rehydrated.
 ...
 
-### What is [React](https://github.com/facebook/react)
+### What is [React](https://github.com/facebook/react)?
 
 React is a JavaScript library for building user interfaces.
 

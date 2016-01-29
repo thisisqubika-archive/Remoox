@@ -22,9 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "yeoman-generator": "^0.22.5",
-    "yosay": "^1.1.0"
-  },
-  "devDependencies": {
+    "yosay": "^1.1.0",
     "chalk": "^1.1.1"
   }
 }

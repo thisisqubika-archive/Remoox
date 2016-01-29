@@ -5,10 +5,10 @@ import { render } from 'react-dom'
 require('../stylesheets/app.css')
 
 import $ from 'jquery'
-import <%= appname %> from './components/BaseComponent'
+import <%= props.appName %> from './components/BaseComponent'
 
 $(() => {
   render((
-    < <%= appname %> />
+    < <%= props.appName %> />
     ), document.getElementById('root'))
 })

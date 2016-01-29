@@ -7,6 +7,12 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async()
 
+    var capitalize = function (string) {
+      return string.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1)
+      }).replace(/\s/g, '')
+    }
+
     this.log(yosay(
       'Welcome to the super special awesome ' + chalk.red('generator-remoox') + ' generator!'
     ))
@@ -15,7 +21,7 @@ module.exports = yeoman.generators.Base.extend({
       type: 'name',
       name: 'appName',
       message: 'Would you like to add a Name for this app?',
-      default: this.appname
+      default: 'RemooxTest'
     }, {
       type: 'description',
       name: 'appDescription',
@@ -29,6 +35,7 @@ module.exports = yeoman.generators.Base.extend({
     }]
 
     this.prompt(prompts, function (props) {
+      props.appName = capitalize(props.appName)
       this.props = props
       done()
     }.bind(this))

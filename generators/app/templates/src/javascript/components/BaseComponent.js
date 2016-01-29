@@ -5,7 +5,7 @@ import { ReduxRouter } from 'redux-router'
 import routes from '../routes'
 import store from '../store'
 
-export default class <%= appname %> extends Component {
+export default class <%= props.appName %> extends Component {
   render() {
     return (
     <Provider store={store}>
