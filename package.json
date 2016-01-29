@@ -1,6 +1,6 @@
 {
   "name": "generator-remoox",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "redux + react + webpack generator",
   "homepage": "github.com/moove-it/remoox",
   "author": {
