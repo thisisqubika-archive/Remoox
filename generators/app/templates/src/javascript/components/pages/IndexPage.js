@@ -1,43 +1,31 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+
+import loadTabs from '../../actions/loadTabs'
+import changeTab from '../../actions/changeTab'
 
 import Header from '../Header'
 import SideNav from '../SideNav'
 
 class IndexPage extends Component {
+  static propTypes = {
+    currentTab: PropTypes.object,
+    tabList: PropTypes.array,
+    dispatch: PropTypes.func
+  }
 
-  constructor(props) {
-    super(props)
-
-    const tabList = [
-      {
-        title: 'Home',
-        text: 'Home is where the heart is.'
-      },
-      {
-        title: 'About',
-        text: 'Lets talk about it.'
-      },
-      {
-        title: 'Knock Knock',
-        text: "Who's there?"
-      }
-    ]
-
-    this.state = {
-      tabList: tabList,
-      currentTab: tabList[0]
-    }
+  componentDidMount() {
+    const { dispatch } = this.props
+    dispatch(loadTabs())
   }
 
   changeTab(tab) {
-    this.setState({
-      currentTab: tab
-    })
+    const { dispatch } = this.props
+    dispatch(changeTab(tab))
   }
 
   render() {
-    const { currentTab, tabList } = this.state
-    console.warn(currentTab)
+    const { currentTab, tabList } = this.props
     return (
     <main>
       <Header currentTab={currentTab} />
@@ -47,4 +35,12 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage
+const select = (state) => {
+  const { tabList, currentTab } = state
+  return {
+    currentTab: currentTab,
+    tabList: tabList && Array.isArray(tabList) ? tabList : []
+  }
+}
+
+export default connect(select)(IndexPage)
