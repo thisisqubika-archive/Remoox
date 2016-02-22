@@ -27,6 +27,7 @@ React is a JavaScript library for building user interfaces.
 - [x] [Babel](https://babeljs.io/) transpiler so you can use ES6 features
 - [x] PostCSS preprocessor with autoprefixer support
 - react-router and redux-router ( comming soon redux-simple-router )
+- Use redux-reselect instead of common selectors
 
 ### Prerequisites
 
